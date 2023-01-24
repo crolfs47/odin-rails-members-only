@@ -1,24 +1,24 @@
-# README
+# odin-rails-members-only
+## The Odin Project - Members Only
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Build an exclusive clubhouse where your members can write anonymous posts. Inside the 
+clubhouse, members can see who the author of a post is but, outside, they can only see 
+the story and wonder who wrote it.
 
-Things you may want to cover:
 
-* Ruby version
+## Languages/Technologies used:
+ - Rails 
+ - Ruby
+ - SQLite3
+ - VS Code
+ - Git/Github
 
-* System dependencies
+## What I learned:
+ - 
+ 
+## Still can improve:
+ - 
 
-* Configuration
+Assignment - https://www.theodinproject.com/lessons/ruby-on-rails-members-only
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+View Project  - TBD
