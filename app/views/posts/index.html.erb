@@ -20,7 +20,8 @@
         <% @posts.each do |post| %>
           
             <div class="box">
-              <p class="has-text-success has-text-weight-bold">Post <%= post.id %> - <%= post.title %></p>
+              <p class="has-text-success has-text-weight-bold"><%= post.title %></p>
+              <p>Date: <%= post.created_at %></p>
               <% if user_signed_in? %>
                 <p>Author: <%= post.user.email %></p>
               <% else %>
