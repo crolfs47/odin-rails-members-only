@@ -1,10 +1,7 @@
 # odin-rails-members-only
 ## The Odin Project - Members Only
 
-Build an exclusive clubhouse where your members can write anonymous posts. Inside the 
-clubhouse, members can see who the author of a post is but, outside, they can only see 
-the story and wonder who wrote it.
-
+Build a website where users can register, login, and write blog posts. Only logged-in users can see who wrote a post.
 
 ## Languages/Technologies used:
  - Rails 
@@ -13,16 +10,24 @@ the story and wonder who wrote it.
  - SQLite3
  - VS Code
  - Git/Github
+ - CSS - Bulma
 
 ## What I learned:
- - How to use Devise gem for authentication
+ - How to use Devise gem for registration and authentication
+ - How to use Bulma framework for CSS
  - MVC - Model-View-Controller pattern
  - Generating models, database migrations, building forms, validations and error messages, model associations
  
 ## Still can improve:
- - This is still very basic, need to improve flow of website and add CSS
+ - This is still very basic, need to improve flow of website with a nav bar, etc.
  - Add ability to edit and delete posts
+ - Improve user interface and CSS
 
 Assignment - https://www.theodinproject.com/lessons/ruby-on-rails-members-only
 
-View Project  - Still need to deploy (TBD on what since Heroku is no longer free)
+View Project  - Did not deploy (Heroku is no longer free). See screenshots below.
+
+## Screenshots:
+Login:
+![f](https://https://user-images.githubusercontent.com/97067689/214705554-d255ec0b-cd45-4cf4-a62c-fb5a61d8c8a4.png)
+
