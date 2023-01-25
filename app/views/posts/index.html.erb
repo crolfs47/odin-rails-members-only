@@ -1,18 +1,36 @@
-<h1>Posts</h1>
+<div class="section">
+  <div class="container">
+    <div class="column is-centered">
+      <div class="column is-10">
+        <h1 class="title is-2 has-text-success">Posts</h1>
 
-<%= link_to "New Post", new_post_path %> 
-<%= button_to "Login", user_session_path, method: :get  %>
-<%= button_to "Logout", destroy_user_session_path, method: :delete  %>
-
-  <% @posts.each do |post| %>
-    <div>
-      <p>Post <%= post.id %>:</p>
-      <% if user_signed_in? %>
-        <p>User: <%= post.user.email %></p>
-      <% end %>
-      <p>Title: <%= post.title %></p>
-      <p>Post: <%= post.body %></p>
-      <p>----------------------</p>
+        <div class="block">
+          <%= link_to "New Post", new_post_path %>
+        </div>
+        
+        <div class="field is-grouped">
+          <div class="control"> 
+            <%= button_to "Login", user_session_path, method: :get, class: "button is-success is-outlined is-small"  %>
+          </div>
+          <div class="control"> 
+            <%= button_to "Logout", destroy_user_session_path, method: :delete, class: "button is-success is-outlined is-small"  %>
+          </div>
+        </div>
+        
+        <% @posts.each do |post| %>
+          
+            <div class="box">
+              <p class="has-text-success has-text-weight-bold">Post <%= post.id %> - <%= post.title %></p>
+              <% if user_signed_in? %>
+                <p>Author: <%= post.user.email %></p>
+              <% else %>
+                <p>Author: Anonymous</p>
+              <% end %>
+              <p><%= post.body %></p>
+            </div>
+         
+        <% end %>
+      </div>
     </div>
-  <% end %>
-
+  </div>
+</div>

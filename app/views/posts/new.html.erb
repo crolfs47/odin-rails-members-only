@@ -1,23 +1,37 @@
-<h1>New Post</h1>
+<div class="section">
+  <div class="container">
+    <div class="column is-centered">
+      <div class="column is-half">
+        <h1 class="title is-2 has-text-success">New Post</h1>
 
-<%= form_with model: @post do |form| %>
-  <div>
-    <%= form.label :title %><br>
-    <%= form.text_field :title %>
-    <% @post.errors.full_messages_for(:title).each do |message| %>
-      <div><%= message %></div>
-    <% end %>
-  </div>
+        <%= form_with model: @post do |form| %>
 
-  <div>
-    <%= form.label :body %><br>
-    <%= form.text_area :body %><br>
-    <% @post.errors.full_messages_for(:body).each do |message| %>
-      <div><%= message %></div>
-    <% end %>
-  </div>
+          <div class="field">
+            <%= form.label :title %><br>
+            <div class="control">
+              <%= form.text_field :title %>
+            </div>
+            <% @post.errors.full_messages_for(:title).each do |message| %>
+              <div><%= message %></div>
+            <% end %>
+          </div>
 
-  <div>
-    <%= form.submit %>
+          <div class="field">
+            <%= form.label :body %><br>
+            <div class="control">
+              <%= form.text_area :body %><br>
+            </div>
+            <% @post.errors.full_messages_for(:body).each do |message| %>
+              <div><%= message %></div>
+            <% end %>
+          </div>
+
+          <div class="field">
+            <%= form.submit class: "button is-success is-outlined is-small" %>
+          </div>
+
+        <% end %>
+      </div>
+    </div>
   </div>
-<% end %>
+</div>

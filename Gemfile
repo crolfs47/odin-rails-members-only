@@ -71,4 +71,8 @@ group :test do
   gem "webdrivers"
 end
 
+# CR add devise gem
 gem 'devise'
+
+# CR add Bulma for CSS framework
+gem "bulma-rails", "~> 0.9.4"
