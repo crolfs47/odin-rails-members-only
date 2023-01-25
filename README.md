@@ -1,7 +1,7 @@
 # odin-rails-members-only
 ## The Odin Project - Members Only
 
-Build a website where users can register, login, and write blog posts. Only logged-in users can see who wrote a post.
+Build an app where users can register, login, and write blog posts. Only logged-in users can see who wrote a post.
 
 ## Languages/Technologies used:
  - Rails 
