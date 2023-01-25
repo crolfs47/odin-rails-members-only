@@ -1,13 +1,18 @@
 <h1>Posts</h1>
 
+<%= link_to "New Post", new_post_path %> 
+<%= button_to "Login", user_session_path, method: :get  %>
+<%= button_to "Logout", destroy_user_session_path, method: :delete  %>
+
   <% @posts.each do |post| %>
     <div>
       <p>Post <%= post.id %>:</p>
-      <p>User: <%= post.user.email %></p>
+      <% if user_signed_in? %>
+        <p>User: <%= post.user.email %></p>
+      <% end %>
       <p>Title: <%= post.title %></p>
       <p>Post: <%= post.body %></p>
+      <p>----------------------</p>
     </div>
   <% end %>
 
-
- <%# <%= link_to "New Post", new_post_path %> 
